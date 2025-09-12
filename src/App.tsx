@@ -3,8 +3,9 @@ import LandingPage from './components/LandingPage';
 import AboutPage from './components/AboutPage';
 import PrivacyPage from './components/PrivacyPage';
 import TermsPage from './components/TermsPage';
+import ContactPage from './components/ContactPage';
 
-type Page = 'landing' | 'about' | 'privacy' | 'terms';
+type Page = 'landing' | 'about' | 'privacy' | 'terms' | 'contact';
 
 function App() {
   const [currentPage, setCurrentPage] = useState<Page>('landing');
@@ -17,6 +18,8 @@ function App() {
         return <PrivacyPage onNavigate={setCurrentPage} />;
       case 'terms':
         return <TermsPage onNavigate={setCurrentPage} />;
+      case 'contact':
+        return <ContactPage onNavigate={setCurrentPage} />;
       default:
         return <LandingPage onNavigate={setCurrentPage} />;
     }

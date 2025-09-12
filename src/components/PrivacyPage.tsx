@@ -2,7 +2,7 @@ import React from 'react';
 import { ArrowLeft, MapPin, Shield, Eye, Lock, Database } from 'lucide-react';
 
 interface PrivacyPageProps {
-  onNavigate: (page: 'landing' | 'about' | 'privacy' | 'terms') => void;
+  onNavigate: (page: 'landing' | 'about' | 'privacy' | 'terms' | 'contact') => void;
 }
 
 const PrivacyPage: React.FC<PrivacyPageProps> = ({ onNavigate }) => {

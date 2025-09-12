@@ -2,7 +2,7 @@ import React from 'react';
 import { ArrowLeft, MapPin, Users, Shield, Award } from 'lucide-react';
 
 interface AboutPageProps {
-  onNavigate: (page: 'landing' | 'about' | 'privacy' | 'terms') => void;
+  onNavigate: (page: 'landing' | 'about' | 'privacy' | 'terms' | 'contact') => void;
 }
 
 const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {

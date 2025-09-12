@@ -14,7 +14,7 @@ import {
 } from 'lucide-react';
 
 interface LandingPageProps {
-  onNavigate: (page: 'landing' | 'about' | 'privacy' | 'terms') => void;
+  onNavigate: (page: 'landing' | 'about' | 'privacy' | 'terms' | 'contact') => void;
 }
 
 const LandingPage: React.FC<LandingPageProps> = ({ onNavigate }) => {
@@ -46,28 +46,39 @@ const LandingPage: React.FC<LandingPageProps> = ({ onNavigate }) => {
             </div>
             <div className="relative">
               <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 shadow-2xl">
-                <div className="bg-white rounded-2xl p-6 shadow-xl">
-                  <div className="space-y-4">
-                    <div className="flex items-center justify-between">
-                      <h3 className="text-gray-900 font-bold text-lg">Today's Summary</h3>
-                      <div className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
-                        All Paid
-                      </div>
+                {/* Phone Mockup */}
+                <div className="bg-gray-900 rounded-[3rem] p-3 shadow-2xl max-w-sm mx-auto">
+                  <div className="bg-white rounded-[2.5rem] overflow-hidden">
+                    {/* Phone Status Bar */}
+                    <div className="bg-gray-900 h-8 flex items-center justify-center">
+                      <div className="w-20 h-1 bg-gray-600 rounded-full"></div>
                     </div>
-                    <div className="grid grid-cols-2 gap-4">
-                      <div className="bg-blue-50 p-4 rounded-xl">
-                        <div className="text-2xl font-bold text-blue-600">3</div>
-                        <div className="text-sm text-gray-600">Trips Today</div>
-                      </div>
-                      <div className="bg-red-50 p-4 rounded-xl">
-                        <div className="text-2xl font-bold text-red-600">£15</div>
-                        <div className="text-sm text-gray-600">Charges</div>
-                      </div>
-                    </div>
-                    <div className="bg-gray-100 rounded-xl h-32 flex items-center justify-center">
-                      <div className="text-center">
-                        <MapPin className="w-8 h-8 text-blue-600 mx-auto mb-2" />
-                        <div className="text-sm text-gray-600">Live Map View</div>
+                    
+                    {/* App Content */}
+                    <div className="p-4 bg-white">
+                      <div className="space-y-4">
+                        <div className="flex items-center justify-between">
+                          <h3 className="text-gray-900 font-bold text-lg">Today's Summary</h3>
+                          <div className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                            All Paid
+                          </div>
+                        </div>
+                        <div className="grid grid-cols-2 gap-3">
+                          <div className="bg-blue-50 p-3 rounded-xl">
+                            <div className="text-xl font-bold text-blue-600">3</div>
+                            <div className="text-xs text-gray-600">Trips Today</div>
+                          </div>
+                          <div className="bg-red-50 p-3 rounded-xl">
+                            <div className="text-xl font-bold text-red-600">£15</div>
+                            <div className="text-xs text-gray-600">Charges</div>
+                          </div>
+                        </div>
+                        <div className="bg-gray-100 rounded-xl h-24 flex items-center justify-center">
+                          <div className="text-center">
+                            <MapPin className="w-6 h-6 text-blue-600 mx-auto mb-1" />
+                            <div className="text-xs text-gray-600">Live Map View</div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -333,13 +344,6 @@ const LandingPage: React.FC<LandingPageProps> = ({ onNavigate }) => {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="w-20 h-20 bg-blue-100 rounded-3xl flex items-center justify-center mx-auto mb-6">
-                <Smartphone className="w-10 h-10 text-blue-600" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Pay by Phone</h3>
-              <p className="text-gray-600">UK & international phone payment options available 24/7</p>
-            </div>
-            <div className="text-center">
               <div className="w-20 h-20 bg-green-100 rounded-3xl flex items-center justify-center mx-auto mb-6">
                 <CreditCard className="w-10 h-10 text-green-600" />
               </div>
@@ -347,18 +351,18 @@ const LandingPage: React.FC<LandingPageProps> = ({ onNavigate }) => {
               <p className="text-gray-600">Quick and secure payments directly via the TfL website</p>
             </div>
             <div className="text-center">
-              <div className="w-20 h-20 bg-purple-100 rounded-3xl flex items-center justify-center mx-auto mb-6">
-                <Smartphone className="w-10 h-10 text-purple-600" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">In-App Payment</h3>
-              <p className="text-gray-600">Future integrated payment system for seamless transactions</p>
-            </div>
-            <div className="text-center">
               <div className="w-20 h-20 bg-yellow-100 rounded-3xl flex items-center justify-center mx-auto mb-6">
                 <CheckCircle className="w-10 h-10 text-yellow-600" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">Manual Tracking</h3>
               <p className="text-gray-600">Mark charges as paid manually with payment reference numbers</p>
+            </div>
+            <div className="text-center">
+              <div className="w-20 h-20 bg-blue-100 rounded-3xl flex items-center justify-center mx-auto mb-6">
+                <Smartphone className="w-10 h-10 text-blue-600" />
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">Mobile Convenience</h3>
+              <p className="text-gray-600">Access all features on-the-go with our intuitive mobile interface</p>
             </div>
           </div>
         </div>
@@ -429,6 +433,12 @@ const LandingPage: React.FC<LandingPageProps> = ({ onNavigate }) => {
                   className="block text-gray-400 hover:text-white transition-colors"
                 >
                   Terms
+                </button>
+                <button 
+                  onClick={() => onNavigate('contact')}
+                  className="block text-gray-400 hover:text-white transition-colors"
+                >
+                  Contact
                 </button>
               </div>
             </div>

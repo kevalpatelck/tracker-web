@@ -2,7 +2,7 @@ import React from 'react';
 import { ArrowLeft, MapPin, FileText, AlertCircle, Shield } from 'lucide-react';
 
 interface TermsPageProps {
-  onNavigate: (page: 'landing' | 'about' | 'privacy' | 'terms') => void;
+  onNavigate: (page: 'landing' | 'about' | 'privacy' | 'terms' | 'contact') => void;
 }
 
 const TermsPage: React.FC<TermsPageProps> = ({ onNavigate }) => {
