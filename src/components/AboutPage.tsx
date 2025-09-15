@@ -1,8 +1,10 @@
-import React from 'react';
-import { ArrowLeft, MapPin, Users, Shield, Award } from 'lucide-react';
+import React from "react";
+import { ArrowLeft, MapPin, Users, Shield, Award } from "lucide-react";
 
 interface AboutPageProps {
-  onNavigate: (page: 'landing' | 'about' | 'privacy' | 'terms' | 'contact') => void;
+  onNavigate: (
+    page: "landing" | "about" | "privacy" | "terms" | "contact"
+  ) => void;
 }
 
 const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
@@ -12,8 +14,8 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
       <header className="bg-gray-900 text-white py-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
-            <button 
-              onClick={() => onNavigate('landing')}
+            <button
+              onClick={() => onNavigate("landing")}
               className="flex items-center gap-3 text-blue-300 hover:text-white transition-colors"
             >
               <ArrowLeft className="w-5 h-5" />
@@ -23,7 +25,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
               <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
                 <MapPin className="w-5 h-5 text-white" />
               </div>
-              <span className="text-xl font-bold">CongestionTracker</span>
+              <span className="text-xl font-bold">Map Alert & Pay</span>
             </div>
           </div>
         </div>
@@ -32,10 +34,12 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-blue-50 to-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl font-bold text-gray-900 mb-6">About CongestionTracker</h1>
+          <h1 className="text-5xl font-bold text-gray-900 mb-6">
+            About Outbound BPO Ltd
+          </h1>
           <p className="text-xl text-gray-600 leading-relaxed">
-            We're on a mission to make London's congestion charge management simple, 
-            transparent, and stress-free for every driver in the city.
+            We’re dedicated to simplifying urban mobility with innovative
+            solutions like Map Alert & Pay.
           </p>
         </div>
       </section>
@@ -45,22 +49,32 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">
+                Our Story
+              </h2>
               <div className="space-y-4 text-gray-600 text-lg">
                 <p>
-                  Born from the frustration of unexpected congestion charge penalties, 
-                  CongestionTracker was created by a team of London drivers who understood 
-                  the daily challenges of navigating the city's complex charging zones.
+                  At Outbound BPO Ltd, we are committed to developing innovative
+                  mobile solutions that simplify everyday challenges. Our
+                  flagship product, Map Alert & Pay, reflects our dedication to
+                  creating user-friendly technology that enhances convenience
+                  and compliance for drivers navigating London’s Congestion
+                  Charging Zone.
                 </p>
                 <p>
-                  After countless conversations with fellow drivers who had missed payments 
-                  or forgotten to pay on time, we realized there had to be a better way. 
-                  That's when we set out to build the ultimate congestion charge companion.
+                  Founded with a vision to leverage technology for smarter urban
+                  mobility, Outbound BPO Ltd combines expertise in software
+                  development, customer service, and urban transport needs. We
+                  understand the complexities of city driving and strive to
+                  provide tools that empower users with timely information and
+                  seamless payment options.
                 </p>
                 <p>
-                  Today, we're proud to help thousands of London drivers stay on top of 
-                  their congestion charges with real-time tracking, smart alerts, and 
-                  seamless payment management.
+                  Our mission is to deliver reliable, accessible, and efficient
+                  applications that improve the driving experience while helping
+                  users avoid unnecessary charges. With Map Alert & Pay, we aim
+                  to make London’s congestion charging system transparent and
+                  easy to manage for everyone.
                 </p>
               </div>
             </div>
@@ -69,8 +83,10 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                 <div className="w-24 h-24 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <MapPin className="w-12 h-12 text-white" />
                 </div>
-                <div className="text-lg font-semibold text-gray-900">Founded in London</div>
-                <div className="text-gray-600">Built by drivers, for drivers</div>
+                <div className="text-lg font-semibold text-gray-900">
+                  Founded for Urban Mobility
+                </div>
+                <div className="text-gray-600">Empowering London drivers</div>
               </div>
             </div>
           </div>
@@ -81,38 +97,48 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Values</h2>
-            <p className="text-xl text-gray-600">The principles that guide everything we do</p>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Our Values
+            </h2>
+            <p className="text-xl text-gray-600">
+              The principles driving our innovative solutions
+            </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-2xl shadow-lg text-center">
               <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <Shield className="w-8 h-8 text-blue-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Privacy First</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">
+                Reliability
+              </h3>
               <p className="text-gray-600">
-                Your location data is yours. We use minimal data collection and prioritize 
-                your privacy in everything we build.
+                We build dependable tools that drivers can trust for accurate
+                congestion charge management.
               </p>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-lg text-center">
               <div className="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <Users className="w-8 h-8 text-green-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">User-Focused</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">
+                User-Centric Design
+              </h3>
               <p className="text-gray-600">
-                Every feature is designed with real drivers in mind. We listen to your 
-                feedback and continuously improve based on your needs.
+                Our apps are crafted to be intuitive, accessible, and tailored
+                to real-world driving needs.
               </p>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-lg text-center">
               <div className="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <Award className="w-8 h-8 text-purple-600" />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Excellence</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-4">
+                Innovation
+              </h3>
               <p className="text-gray-600">
-                We're committed to delivering a reliable, accurate, and intuitive experience 
-                that you can depend on every day.
+                We leverage cutting-edge technology to simplify complex urban
+                transport challenges.
               </p>
             </div>
           </div>
@@ -122,16 +148,20 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
       {/* Team Section */}
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-gray-900 mb-8">Built by Londoners</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-8">Our Team</h2>
           <p className="text-xl text-gray-600 mb-12">
-            Our team consists of London residents, daily commuters, and technology enthusiasts 
-            who understand the unique challenges of driving in our great city.
+            A passionate group of software developers, customer service experts,
+            and urban mobility specialists dedicated to enhancing your driving
+            experience.
           </p>
           <div className="bg-blue-50 rounded-2xl p-8">
             <div className="text-6xl font-bold text-blue-600 mb-4">10,000+</div>
-            <div className="text-xl text-gray-900 font-semibold mb-2">Happy Users</div>
+            <div className="text-xl text-gray-900 font-semibold mb-2">
+              Happy Users
+            </div>
             <div className="text-gray-600">
-              Drivers across London trust CongestionTracker to manage their daily charges
+              Drivers across London rely on Map Alert & Pay for seamless
+              congestion charge management.
             </div>
           </div>
         </div>
@@ -140,17 +170,22 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
       {/* Contact Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">Get in Touch</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">
+            Get in Touch
+          </h2>
           <p className="text-xl text-gray-600 mb-8">
-            Have questions, feedback, or suggestions? We'd love to hear from you.
+            Questions, feedback, or suggestions? We’re here to help you navigate
+            with ease.
           </p>
           <div className="bg-white rounded-2xl p-8 shadow-lg">
-            <div className="text-2xl font-semibold text-gray-900 mb-2">Contact Support</div>
-            <a 
-              href="mailto:support@congestiontracker.com" 
+            <div className="text-2xl font-semibold text-gray-900 mb-2">
+              Contact Support
+            </div>
+            <a
+              href="mailto:support@mapalertpay.com"
               className="text-blue-600 hover:text-blue-700 text-lg font-medium"
             >
-              support@congestiontracker.com
+              support@mapalertpay.com
             </a>
             <p className="text-gray-600 mt-4">
               We typically respond within 24 hours during business days.
@@ -166,9 +201,11 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
             <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
               <MapPin className="w-5 h-5 text-white" />
             </div>
-            <span className="text-xl font-bold">CongestionTracker</span>
+            <span className="text-xl font-bold">Map Alert & Pay</span>
           </div>
-          <p className="text-gray-400">&copy; 2025 CongestionTracker. All rights reserved.</p>
+          <p className="text-gray-400">
+            &copy; 2025 Outbound BPO Ltd. All rights reserved.
+          </p>
         </div>
       </footer>
     </div>
