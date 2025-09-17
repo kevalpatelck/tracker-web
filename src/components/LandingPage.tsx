@@ -14,6 +14,7 @@ import {
   DollarSign,
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import imglogo from "../assets/img/Group1.jpeg";
 
 const LandingPage: React.FC<any> = () => {
   const navigate = useNavigate();
