@@ -71,19 +71,16 @@ const LandingPage: React.FC<any> = () => {
                 </button>
               </div>
             </div>
-            <div className="relative">
-              <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 shadow-2xl">
+            <div className="relative flex justify-center items-center">
+              <div className="bg-white/10 backdrop-blur-lg rounded-xl p-3 sm:p-4 lg:p-6 shadow-lg max-w-xs w-full">
                 {/* Phone Mockup */}
-                <div className="bg-gray-900 rounded-[3rem] p-3 shadow-2xl max-w-sm mx-auto">
-                  <div className="bg-white rounded-[2.5rem] overflow-hidden">
-                    {/* <div className="bg-gray-900 h-8 flex items-center justify-center"> */}
-                    {/* <div className="w-20 h-1 bg-gray-600 rounded-full"></div> */}
-                    {/* </div> */}
-                    <div className="p-1 bg-black">
+                <div className="bg-gray-900 rounded-xl p-1.5 sm:p-2 shadow-md w-full aspect-[9/16] max-w-[240px] sm:max-w-[280px] mx-auto">
+                  <div className="bg-white rounded-lg overflow-hidden">
+                    <div className="p-0.5 bg-black">
                       <img
-                        src={imglogo} // <--- image path from public folder
+                        src={imglogo}
                         alt="Map Alert & Pay Preview"
-                        className="rounded-xl w-full object-cover"
+                        className="rounded-md w-full h-full object-cover"
                       />
                     </div>
                   </div>
