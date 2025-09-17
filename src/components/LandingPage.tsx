@@ -21,6 +21,9 @@ const LandingPage: React.FC<any> = () => {
 
   const onNavigate = (route: any) => {
     navigate(`/${route}`);
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: "smooth" }); // Fallback with smooth behavior
+    }, 100);
   };
   return (
     <div className="bg-white">
