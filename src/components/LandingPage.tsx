@@ -14,7 +14,7 @@ import {
   DollarSign,
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import imglogo from "../assets/img/Group1.jpeg";
+import imglogo from "../assets/img/Phone.png";
 
 const LandingPage: React.FC<any> = () => {
   const navigate = useNavigate();
@@ -72,18 +72,14 @@ const LandingPage: React.FC<any> = () => {
               </div>
             </div>
             <div className="relative flex justify-center items-center">
-              <div className="bg-white/10 backdrop-blur-lg rounded-xl p-3 sm:p-4 lg:p-6 shadow-lg max-w-xs w-full">
-                {/* Phone Mockup */}
-                <div className="bg-gray-900 rounded-xl p-1.5 sm:p-2 shadow-md w-full aspect-[9/16] max-w-[240px] sm:max-w-[280px] mx-auto">
-                  <div className="bg-white rounded-lg overflow-hidden">
-                    <div className="p-0.5 bg-black">
-                      <img
-                        src={imglogo}
-                        alt="Map Alert & Pay Preview"
-                        className="rounded-md w-full h-full object-cover"
-                      />
-                    </div>
-                  </div>
+              {/* Phone Mockup */}
+              <div className=" p-1.5 sm:p-2  w-full aspect-[9/16] max-w-[240px] sm:max-w-[280px] mx-auto">
+                <div className="rounded-lg overflow-hidden">
+                  <img
+                    src={imglogo}
+                    alt="Map Alert & Pay Preview"
+                    className="rounded-md w-full h-full object-cover"
+                  />
                 </div>
               </div>
             </div>
