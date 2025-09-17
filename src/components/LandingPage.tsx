@@ -72,28 +72,15 @@ const LandingPage: React.FC<any> = () => {
                 {/* Phone Mockup */}
                 <div className="bg-gray-900 rounded-[3rem] p-3 shadow-2xl max-w-sm mx-auto">
                   <div className="bg-white rounded-[2.5rem] overflow-hidden">
-                    <div className="bg-gray-900 h-8 flex items-center justify-center">
-                      <div className="w-20 h-1 bg-gray-600 rounded-full"></div>
-                    </div>
-                    <div className="p-4 bg-white">
-                      <div className="space-y-4">
-                        <div className="flex items-center justify-between">
-                          <h3 className="text-gray-900 font-bold text-lg">
-                            Map Alert & Pay
-                          </h3>
-                          <div className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
-                            Zone Detected
-                          </div>
-                        </div>
-                        <div className="bg-gray-100 rounded-xl h-24 flex items-center justify-center">
-                          <div className="text-center">
-                            <MapPin className="w-6 h-6 text-blue-600 mx-auto mb-1" />
-                            <div className="text-xs text-gray-600">
-                              Live Congestion Zone Map
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                    {/* <div className="bg-gray-900 h-8 flex items-center justify-center"> */}
+                    {/* <div className="w-20 h-1 bg-gray-600 rounded-full"></div> */}
+                    {/* </div> */}
+                    <div className="p-1 bg-black">
+                      <img
+                        src={imglogo} // <--- image path from public folder
+                        alt="Map Alert & Pay Preview"
+                        className="rounded-xl w-full object-cover"
+                      />
                     </div>
                   </div>
                 </div>
