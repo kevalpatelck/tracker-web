@@ -13,14 +13,14 @@ import {
   Download,
   DollarSign,
 } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
-interface LandingPageProps {
-  onNavigate: (
-    page: "landing" | "about" | "privacy" | "terms" | "contact"
-  ) => void;
-}
+const LandingPage: React.FC<any> = () => {
+  const navigate = useNavigate();
 
-const LandingPage: React.FC<LandingPageProps> = ({ onNavigate }) => {
+  const onNavigate = (route: any) => {
+    navigate(`/${route}`);
+  };
   return (
     <div className="bg-white">
       {/* Hero Section */}

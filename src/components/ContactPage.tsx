@@ -7,14 +7,10 @@ import {
   Send,
   CheckCircle,
 } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
-interface ContactPageProps {
-  onNavigate: (
-    page: "landing" | "about" | "privacy" | "terms" | "contact"
-  ) => void;
-}
-
-const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
+const ContactPage: React.FC<any> = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -51,7 +47,7 @@ const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             <button
-              onClick={() => onNavigate("landing")}
+              onClick={() => navigate(-1)}
               className="flex items-center gap-3 text-blue-300 hover:text-white transition-colors"
             >
               <ArrowLeft className="w-5 h-5" />
