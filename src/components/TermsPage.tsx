@@ -41,7 +41,10 @@ const TermsPage: React.FC<TermsPageProps> = ({ onNavigate }) => {
             Terms of Use
           </h1>
           <p className="text-xl text-gray-600">
-            Please read these terms carefully before using Map Alert & Pay.
+            Welcome to Map Alert & Pay, developed and provided by Outbound BPO
+            Ltd. By downloading, accessing, or using this application, you agree
+            to comply with and be bound by the following Terms of Use. Please
+            read them carefully.
           </p>
           <div className="text-sm text-gray-500 mt-4">
             Last updated: January 15, 2025
@@ -89,10 +92,9 @@ const TermsPage: React.FC<TermsPageProps> = ({ onNavigate }) => {
               </h2>
               <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
                 <p>
-                  By downloading, accessing, or using Map Alert & Pay, you
-                  acknowledge that you have read, understood, and agree to these
-                  Terms of Use and our Privacy Policy. If you do not agree,
-                  please do not use the app.
+                  By using Map Alert & Pay, you acknowledge that you have read,
+                  understood, and agree to these Terms of Use and our Privacy
+                  Policy. If you do not agree, please do not use the app.
                 </p>
                 <p>
                   We reserve the right to modify these Terms of Use at any time.
@@ -162,9 +164,9 @@ const TermsPage: React.FC<TermsPageProps> = ({ onNavigate }) => {
                       <div className="w-3 h-3 bg-gray-600 rounded-full"></div>
                     </div>
                     <p>
-                      <strong>Location Services:</strong> Ensure your device’s
-                      location services are enabled for the app to function
-                      correctly.
+                      <strong>Location Services:</strong> You are responsible
+                      for ensuring your device’s location services are enabled
+                      for the app to function correctly.
                     </p>
                   </div>
                   <div className="flex items-start gap-4">
@@ -172,8 +174,8 @@ const TermsPage: React.FC<TermsPageProps> = ({ onNavigate }) => {
                       <div className="w-3 h-3 bg-gray-600 rounded-full"></div>
                     </div>
                     <p>
-                      <strong>Proper Use:</strong> Do not misuse the app or
-                      interfere with its operation.
+                      <strong>Proper Use:</strong> You agree not to misuse the
+                      app or interfere with its operation.
                     </p>
                   </div>
                   <div className="flex items-start gap-4">
@@ -181,9 +183,9 @@ const TermsPage: React.FC<TermsPageProps> = ({ onNavigate }) => {
                       <div className="w-3 h-3 bg-gray-600 rounded-full"></div>
                     </div>
                     <p>
-                      <strong>Judgment:</strong> Alerts are provided as a
-                      convenience and should not replace your own judgment or
-                      official signage.
+                      <strong>Judgment:</strong> AYou acknowledge that alerts
+                      are provided as a convenience and should not replace your
+                      own judgment or official signage.
                     </p>
                   </div>
                 </div>
@@ -307,9 +309,7 @@ const TermsPage: React.FC<TermsPageProps> = ({ onNavigate }) => {
               <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
                 <p>
                   These Terms of Use are governed by and construed in accordance
-                  with the laws of the United Kingdom. Any disputes will be
-                  subject to the exclusive jurisdiction of the courts of the
-                  United Kingdom.
+                  with the laws of the United Kingdom.
                 </p>
               </div>
             </div>
@@ -321,7 +321,7 @@ const TermsPage: React.FC<TermsPageProps> = ({ onNavigate }) => {
               <div className="bg-gray-50 rounded-xl p-8">
                 <p className="text-gray-700 text-lg mb-4">
                   For questions or concerns regarding these Terms of Use, please
-                  contact us:
+                  contact us at support@outboundbpo.com.
                 </p>
                 <div className="space-y-2">
                   <p>
@@ -334,6 +334,15 @@ const TermsPage: React.FC<TermsPageProps> = ({ onNavigate }) => {
                     </a>
                   </p>
                 </div>
+              </div>
+            </div>
+            <div>
+              <div className="bg-gray-50 rounded-xl p-8">
+                <p className="text-gray-700 text-lg mb-4">
+                  Thank you for choosing Map Alert & Pay. We appreciate your
+                  trust and are committed to providing you with a reliable and
+                  helpful service.
+                </p>
               </div>
             </div>
           </div>

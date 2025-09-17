@@ -41,8 +41,10 @@ const PrivacyPage: React.FC<PrivacyPageProps> = ({ onNavigate }) => {
             Privacy Policy
           </h1>
           <p className="text-xl text-gray-600">
-            At Outbound BPO Ltd, your privacy is our priority. Learn how we
-            protect your data with Map Alert & Pay.
+            At Outbound BPO Ltd, we value your privacy and are committed to
+            protecting your personal information when you use the Map Alert &
+            Pay application. This Privacy Policy explains how we collect, use,
+            and safeguard your data.
           </p>
           <div className="text-sm text-gray-500 mt-4">
             Last updated: January 15, 2025
@@ -227,7 +229,12 @@ const PrivacyPage: React.FC<PrivacyPageProps> = ({ onNavigate }) => {
                 Your Choices
               </h2>
               <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
-                <p>You have control over how your data is used:</p>
+                <p>
+                  You can control location permissions through your device
+                  settings. Disabling location services will limit the app’s
+                  functionality. You may also opt out of receiving notifications
+                  at any time.
+                </p>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="bg-green-50 rounded-xl p-6">
                     <h3 className="text-lg font-semibold text-green-900 mb-2">
@@ -270,9 +277,13 @@ const PrivacyPage: React.FC<PrivacyPageProps> = ({ onNavigate }) => {
               <div className="bg-gray-50 rounded-xl p-8">
                 <p className="text-gray-700 text-lg mb-4">
                   If you have questions or concerns about your privacy, please
-                  contact us:
+                  contact us at privacy@outboundbpo.com.
                 </p>
-                <div className="space-y-2">
+                <p className="text-gray-700 text-lg mb-4">
+                  Thank you for trusting Outbound BPO Ltd and Map Alert & Pay
+                  with your information. Your privacy is important to us.
+                </p>
+                {/* <div className="space-y-2">
                   <p>
                     <strong>Email:</strong>{" "}
                     <a
@@ -286,7 +297,7 @@ const PrivacyPage: React.FC<PrivacyPageProps> = ({ onNavigate }) => {
                     <strong>Response Time:</strong> We aim to respond to all
                     privacy requests within 30 days
                   </p>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

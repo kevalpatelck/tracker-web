@@ -111,7 +111,7 @@ const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
               <div className="space-y-4 text-gray-600">
                 <p>
                   For support, enquiries, or more information about Map Alert &
-                  Pay, please use the contact form below.
+                  Pay, please contact us by completing the contact Form below.
                 </p>
                 <p>
                   <strong>Email:</strong>{" "}

@@ -11,6 +11,7 @@ import {
   CheckCircle,
   Star,
   Download,
+  DollarSign,
 } from "lucide-react";
 
 interface LandingPageProps {
@@ -33,13 +34,36 @@ const LandingPage: React.FC<LandingPageProps> = ({ onNavigate }) => {
                 <span className="text-yellow-300">Map Alert & Pay</span>
               </h1>
               <p className="text-xl sm:text-2xl text-blue-100 leading-relaxed">
-                Your essential companion for navigating London’s Congestion
-                Charging Zone with ease and confidence.
+                Your Essential London Congestion Charging Companion!
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-black text-white px-8 py-4 rounded-2xl font-semibold flex items-center justify-center gap-3 hover:bg-gray-800 transition-colors">
+              <p className="text-xl sm:text-2xl text-blue-100 leading-relaxed">
+                Map Alert & Pay is a convenient and user-friendly iPhone
+                application designed to keep you informed and in control when
+                driving in London’s Congestion Charging Zone. With this app,
+                you’ll receive free, real-time alerts the moment you enter the
+                charging area, helping you avoid unexpected fees and stay
+                compliant with city regulations.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-2">
+                <button
+                  className="bg-black text-white px-8 py-4 rounded-2xl font-semibold flex items-center justify-center gap-3 hover:bg-gray-800 transition-colors"
+                  onClick={() =>
+                    (window.location.href =
+                      "https://apps.apple.com/us/app/map-alert-and-pay/id6590636558")
+                  }
+                >
                   <Download className="w-6 h-6" />
                   Download on App Store
+                </button>
+                <button
+                  className="bg-white text-black px-8 py-4 rounded-2xl font-semibold flex items-center justify-center gap-3 hover:bg-gray-100 transition-colors"
+                  onClick={() =>
+                    (window.location.href =
+                      "https://play.google.com/store/apps/details?id=uk.co.mapalertpay.app")
+                  }
+                >
+                  <Download className="w-6 h-6" />
+                  Download on Google play
                 </button>
               </div>
             </div>
@@ -91,7 +115,7 @@ const LandingPage: React.FC<LandingPageProps> = ({ onNavigate }) => {
               London
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
               <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
                 <Bell className="w-8 h-8 text-blue-600" />
@@ -210,8 +234,8 @@ const LandingPage: React.FC<LandingPageProps> = ({ onNavigate }) => {
               Free to Use
             </h2>
             <p className="text-xl text-gray-600">
-              Enjoy all core features at no cost, designed for every London
-              driver
+              All these features are available in the free version of the app,
+              ensuring you get value without any cost.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -264,14 +288,26 @@ const LandingPage: React.FC<LandingPageProps> = ({ onNavigate }) => {
           <p className="text-xl mb-8 text-blue-100">
             Whether you’re a daily commuter or an occasional visitor, Map Alert
             & Pay is your trusted partner for navigating London’s congestion
-            charges with ease.
+            charges with ease and confidence. Download now and drive smarter.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <button className="bg-black text-white px-10 py-4 rounded-2xl font-semibold flex items-center justify-center gap-3 hover:bg-gray-800 transition-colors text-lg">
+            <button
+              className="bg-black text-white px-10 py-4 rounded-2xl font-semibold flex items-center justify-center gap-3 hover:bg-gray-800 transition-colors text-lg"
+              onClick={() =>
+                (window.location.href =
+                  "https://apps.apple.com/us/app/map-alert-and-pay/id6590636558")
+              }
+            >
               <Download className="w-6 h-6" />
               App Store
             </button>
-            <button className="bg-white text-gray-900 px-10 py-4 rounded-2xl font-semibold flex items-center justify-center gap-3 hover:bg-gray-100 transition-colors text-lg">
+            <button
+              className="bg-white text-gray-900 px-10 py-4 rounded-2xl font-semibold flex items-center justify-center gap-3 hover:bg-gray-100 transition-colors text-lg"
+              onClick={() =>
+                (window.location.href =
+                  "https://play.google.com/store/apps/details?id=uk.co.mapalertpay.app")
+              }
+            >
               <Download className="w-6 h-6" />
               Google Play
             </button>

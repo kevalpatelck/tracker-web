@@ -76,6 +76,11 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                   to make London’s congestion charging system transparent and
                   easy to manage for everyone.
                 </p>
+                <p>
+                  Thank you for choosing Outbound BPO Ltd. We are dedicated to
+                  supporting you on the road with innovative solutions designed
+                  for today’s fast-paced world.
+                </p>
               </div>
             </div>
             <div className="bg-gray-100 rounded-2xl p-8 h-80 flex items-center justify-center">
