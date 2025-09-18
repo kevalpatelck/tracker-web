@@ -47,7 +47,7 @@ const ContactPage: React.FC<any> = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             <button
-              onClick={() => navigate(-1)}
+              onClick={() => navigate("/")}
               className="flex items-center gap-3 text-blue-300 hover:text-white transition-colors"
             >
               <ArrowLeft className="w-5 h-5" />
